@@ -36,14 +36,14 @@ public class BoardGame {
         return instance;
     }
     public static void main(String[] args) {
-        BoardGame[] game = new BoardGame[4];
-        game[0] = new BoardGame();
-        game[1] = new BoardGame("Monopoly", 2, 8, 6);
-        game[2] = BoardGame.getInstance();
-        game[3] = BoardGame.getInstance();
-        for(int i=0; i<4; i++)
+        BoardGame[] games = new BoardGame[4];
+        games[0] = new BoardGame();
+        games[1] = new BoardGame("Monopoly", 2, 8, 6);
+        games[2] = BoardGame.getInstance();
+        games[3] = BoardGame.getInstance();
+        for (var game: games)
         {
-            System.out.println(game[i].toString());
+            System.out.println(game);
         }
     }
 }
