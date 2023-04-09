@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<BugCollection version='4.4.2' threshold='low' effort='max'><Error></Error><Project><SrcDir>C:\JavaLab\javalab3\src\main\java</SrcDir><SrcDir>C:\JavaLab\javalab3\src\test\java</SrcDir></Project></BugCollection>
