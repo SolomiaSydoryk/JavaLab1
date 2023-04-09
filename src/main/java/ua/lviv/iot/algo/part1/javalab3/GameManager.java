@@ -2,6 +2,7 @@ package ua.lviv.iot.algo.part1.javalab3;
 
 import java.util.List;
 import java.util.LinkedList;
+import java.util.Objects;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -20,7 +21,7 @@ public class GameManager {
 
     public List<Game> findAllWithPublisher(String publisher) {
         return games.stream()
-                .filter(game -> game.getPublisher() == publisher)
+                .filter(game -> Objects.equals(game.getPublisher(), publisher))
                 .collect(Collectors.toList());
     }
 }

@@ -53,12 +53,18 @@
                 <version>4.4.2</version>
                 <executions>
                     <execution>
-                    <phase>verify</phase>
-                    <goals>
-                    <goal>check</goal>
-                    </goals>
+                        <id>spotbugs</id>
+                        <phase>verify</phase>
+                        <goals>
+                        <goal>check</goal>
+                        </goals>
                 </execution>
                 </executions>
+                <configuration>
+                    <effort>Max</effort>
+                    <threshold>Low</threshold>
+                    <xmlOutput>true</xmlOutput>
+                </configuration>
                 <dependencies>
                     <dependency>
                     <groupId>com.github.spotbugs</groupId>
