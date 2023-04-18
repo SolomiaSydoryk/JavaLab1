@@ -18,6 +18,9 @@ public abstract class Game {
     protected int year;
     protected int minPlayers;
     protected int maxPlayers;
+    protected int numberOfParts;
     public abstract int connectPlayer(int currentPlayers);
     public abstract int disconnectPlayer(int currentPlayers);
+    public abstract String getHeaders();
+    public abstract String toCSV();
 }
